@@ -47,3 +47,9 @@ hover를 폼에도 사용해보는등 폼을 꾸며 보았습니다. css3로 애
 이용 해 보았습니다. 객체의 메소드 활용을 해 보았습니다. Date 객체에 대해 알아보고 이용 해 보았습니다.
 string객체에 대해 알아보고 이용 해 보았습니다. Math객체를 알이보고 이용 해 보았습니다. 사용자 객체를 알아보고
 이용 해 보았습니다.
+
+12주차: HTML DOM(Document Object Model)에 대해 알아보고 이용해 보았습니다. document 객체에 대해
+알아보았습니다. HTML BOM(Browser Object Model)객체들에 대해 이용해 보고 알아보았습니다.
+window객체의 타이머를 알아보고 활용 해 보았습니다. BOM location 객체에 대해 알아보고 이용 해 보았습니다.
+BOM navigator 객체에 대해 알아보고 이용 해 보았습니다. BOM screen 객체에 대해 알아보고 이용 해 보았습니다.
+BOM history 객체에 대해 알아보고 이용 해 보았씁니다.
