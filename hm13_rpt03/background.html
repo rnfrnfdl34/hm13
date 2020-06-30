@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>select 객체에서 선택한 과일출력</title>
+<script>
+function showImage() {
+var sel = document.getElementById("gr");
+var img = document.getElementById("back");
+img.src = sel.options[sel.selectedIndex].value;
+}
+</script>
+</head>
+<body onload="showImage()">
+<form>
+<select id="gr" onchange="showImage()">
+<option value="media/unv.jpg">우주
+<option value="media/sul.jpg" selected>서울(롯데타워)
+<option value="media/sea.jpg">바다
+<option value="media/cav.jpg">동굴
+<option value="media/amz.jpg">아마존</option>
+</select>
+<img id="back" src="media/amz.jpg"  alt="">
+</form>
+</body>
+</html> 

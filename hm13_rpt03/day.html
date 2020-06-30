@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		
+		<meta charset="utf-8">
+		<title>hm13 : Semantic tag and form</title>
+		<head><title></title>
+		   </head>
+		   <body >
+		  <script language=javascript>
+		  function tick(){
+		  var month,date,hours,minutes, seconds, ap;
+		  var intDate,intMon,intHours,intMinutes,intSeconds;
+		  var today=new Date();  
+		  intDate = today.getDate();
+		  intMon = today.getMonth()+1;
+		  intHours = today.getHours();
+		  intMinutes = today.getMinutes();
+		  intSeconds = today.getSeconds();  
+		  if(intMon < 10){ month = "0" + intMon; } 
+		  else { month = intMon; }
+		  if(intDate < 10){ date = "0" + intDate; } 
+		  else { date = intDate; }
+		  if (intHours == 0) { hours = "12:"; ap = "AM "; }
+		  
+		  else if (intHours < 12) { hours = intHours + ":"; ap = "AM "; } 
+		  else { intHours = (intHours - 12); hours =""+ intHours + ":"; ap = "PM "; }
+		  if (intMinutes < 10){ minutes = "0" + intMinutes + ":"; }
+		  else{ minutes = intMinutes + ":"; }
+		  if (intSeconds < 10){ seconds = "0" + intSeconds; }
+		  else{ seconds = intSeconds; }  
+		  document.getElementById("clock").innerHTML = ap+ hours + minutes + seconds  
+		  window.setTimeout("tick()",1000);
+		  }
+		  window.onload=tick
+		  </script>  
+		  <style>
+		  #clock {width:470px;
+				  height: 100px;
+					text-align:left;font-size:5em;
+			  color:#180544;
+					background: lightblue; 
+				   
+					}
+		  </style>
+		  <div id="clock"></div>
+		   </body>
+		  
+		<style>
+			table { 
+border-collapse : collapse; 
+}
+table { 
+border-collapse : collapse; 
+}
+td, th { 
+text-align : left;
+padding : 5px;
+height : 25px; 
+width : 800px;
+}
+thead, tfoot { 
+background : lightblue;
+color : black;
+}
+tbody>tr{
+	background:darkgray
+}
+tbody tr:nth-child(even) { 
+background : aliceblue;
+}
+tbody tr:hover {
+background : lightgreen;
+}
+
+
+		</style>
+		<script></script>
+		
+	</head>
+	<table>
+		<thead>
+		<tr><th>시간</th><th>하는 일</th></tr>
+		</thead>
+			<tbody>
+			<tr><td>11:00</td><td>최근 시험기간이라 늦게자고 늦게 일어납니다.</td></tr>
+			<tr><td>~13:00</td><td>주로 밥먹기전까지 휴대폰을 보다 12시정도 되면 식사합니다.</td></tr>
+			<tr><td>~18:00</td><td>점심식사 후 시험공부를 시작합니다. 6시가 되면 밥을 먹습니다.</div></td></tr>
+			<tr><td>~20:00</td><td>저녁식사 후 휴식을 취한 후 다시 시험공부를 합니다.</td></tr>
+			<tr><td>~00:00</td><td>공부를 마칩니다.</td></tr>
+			<tr><td>~자기전</td><td>잘 준비를 하고 휴대폰을 보다 잠이 듭니다</td></tr>
+			</tbody>
+			</table> 
+					
+	<body>
+		<!-- 문서의 본문 텍스트, 이미지, 테이블, 자바스크립트 코드, 동영상 등 -->
+
+
+
+	</body>
+
+</html>
+

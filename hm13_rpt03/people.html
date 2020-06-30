@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head><title>동호회 모집
+</title></head>
+<script>
+    function checkFilled(obj) {
+    if(obj.value == "") {
+    alert("새로고침 후 모든 칸을 채워주세요");
+    obj.focus(); 
+    }
+    }
+    
+    </script>
+<style>
+
+input:hover, textarea:hover {
+background : lightgreen;
+}
+input[type=text]:focus, input[type=email]:focus { font-size : 110%; }
+input[type=url]:focus { font-size : 110%; }
+input[type=tel]:focus { font-size : 110%; }
+
+</style>
+<body onload="document.getElementById('name').focus();">
+<h3>본인의 정보를 입력해 주세요.</h3>
+<hr>
+<form>
+<fieldset>
+<legend>본인정보</legend>
+이메일 : <input type="email" id='name' onblur="checkFilled(this)" placeholder=" id@host"><br>
+이름 : <input type="text"  id='name' onblur="checkFilled(this)" placeholder=" 홍길동"><br> 
+전화번호 : <input type="tel"  id='name' onblur="checkFilled(this)" placeholder=" -를 입력해주세요.">
+<input type="submit" value="완료">
+
+</fieldset>
+<small>문의사항 : Tel. 010-3703-6406</small>
+</form>
+</body>
+</html>
